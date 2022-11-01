@@ -6,7 +6,7 @@
 /*   By: aahrach <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 18:28:15 by aahrach           #+#    #+#             */
-/*   Updated: 2022/10/31 18:46:15 by aahrach          ###   ########.fr       */
+/*   Updated: 2022/11/01 14:53:50 by aahrach          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,17 +24,16 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (i);
 }
+/*
 #include <stdio.h>
 int main()
 {
-	int i;
-	i = 0;
 	t_list *p = ft_lstnew("1");
-	while (i < 6)
-	{
-		p->next = ft_lstnew("5");
-		i++;
-	}
-	i = ft_lstsize(p);
-	printf("%d",i);
-}
+	t_list *s = ft_lstnew("2");
+	p->next = s;
+	s = ft_lstnew("2");
+	p->next->next = s;
+	s = ft_lstnew("3");
+	p->next->next->next = s;
+	printf("%d",ft_lstsize(p));
+}*/
