@@ -29,17 +29,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-/*#include <stdio.h>
-#include <string.h>
-int main()
-{
-	char s1[]="achk\0g";
-	char s2[]="achk\0f";
-	printf("%d\n",ft_strncmp(s1, s2, 10));
-	printf("%d\n",strncmp(s1, s2, 10));
-
-	char s11[]="achksg";
-	char s22[]="achksf\0";
-	printf("%d\n",ft_strncmp(s11, s22, 10));
-	printf("%d\n",strncmp(s11, s22, 10));
-}*/

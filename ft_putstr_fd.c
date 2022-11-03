@@ -21,11 +21,3 @@ void	ft_putstr_fd(char *s, int fd)
 		write (fd, &s[i++], 1);
 	}
 }
-/*
-#include <fcntl.h>
-int main()
-{
-	char s[] = "achraf";
-	int fd = open("test.",O_CREAT | O_WRONLY);
-	ft_putstr_fd(s, fd);
-}*/

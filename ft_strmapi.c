@@ -31,15 +31,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	p[j] = '\0';
 	return (p);
 }
-/*
-char	big(unsigned int j, char c)
-{
-    char     s;
-    s =  c - 32;
-    return (s);
-}
-int main()
-{
-    const char a[] = "achraf";
-    printf("%s",ft_strmapi(a, big));
-}*/

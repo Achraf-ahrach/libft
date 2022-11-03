@@ -6,7 +6,7 @@
 /*   By: aahrach <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 21:29:34 by aahrach           #+#    #+#             */
-/*   Updated: 2022/11/01 15:52:30 by aahrach          ###   ########.fr       */
+/*   Updated: 2022/11/03 14:29:14 by aahrach          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ t_list	*ft_lstlast(t_list *lst)
 {
 	if (lst == NULL)
 		return (0);
-	while (lst->next)
+	while (lst->next != NULL)
 		lst = lst->next;
 	return (lst);
 }

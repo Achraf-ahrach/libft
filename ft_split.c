@@ -70,14 +70,3 @@ char	**ft_split(char const *s, char c)
 	p[a] = (NULL);
 	return (p);
 }
-/*
-#include <stdio.h>
-int main()
-{
-	char **p;
-	int i = 0;
-	char s[] = "  Aaa AA AAA    AAAA  AAAAA";
-	p = ft_split(s, ' ');
-	while (p[i] != NULL)
-		printf("%s\n",p[i++]);
-}*/

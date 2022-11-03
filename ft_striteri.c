@@ -6,7 +6,7 @@
 /*   By: aahrach <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 11:42:50 by aahrach           #+#    #+#             */
-/*   Updated: 2022/10/24 11:04:34 by aahrach          ###   ########.fr       */
+/*   Updated: 2022/11/03 14:32:19 by aahrach          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,15 +23,3 @@ void	ft_striteri(char *s, void f(unsigned int, char*))
 			i++;
 	}
 }
-/*
-void	f(unsigned int i, char *s)
-{
-	*s -= 32;
-}
-
-int main()
-{
-	char s[] = "acharf";
-	ft_striteri(s, f);
-	printf("%s",s);
-}*/

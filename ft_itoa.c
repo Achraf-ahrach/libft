@@ -6,7 +6,7 @@
 /*   By: aahrach <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 15:05:25 by aahrach           #+#    #+#             */
-/*   Updated: 2022/10/28 10:13:11 by aahrach          ###   ########.fr       */
+/*   Updated: 2022/11/03 14:19:50 by aahrach          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,10 +59,3 @@ char	*ft_itoa(int n)
 	}
 	return (p);
 }
-/*
-#include <stdio.h>
-int main ()
-{
-	int i = 0;
-	printf("%s",ft_itoa(9));
-}*/
