@@ -6,7 +6,7 @@
 /*   By: aahrach <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 21:20:01 by aahrach           #+#    #+#             */
-/*   Updated: 2022/11/03 14:28:33 by aahrach          ###   ########.fr       */
+/*   Updated: 2022/11/03 15:15:50 by aahrach          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,9 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	while (lst->next != NULL)
+	if (!lst || !f)
+		return ;
+	while (lst != NULL)
 	{
 		f(lst->content);
 		lst = lst->next;

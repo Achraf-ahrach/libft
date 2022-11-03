@@ -6,7 +6,7 @@
 /*   By: aahrach <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 17:10:32 by aahrach           #+#    #+#             */
-/*   Updated: 2022/11/03 14:28:00 by aahrach          ###   ########.fr       */
+/*   Updated: 2022/11/03 15:12:39 by aahrach          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
+	if (!lst || !del)
+		return ;
 	del(lst->content);
-	lst = lst->next;
 	free(lst);
 }
