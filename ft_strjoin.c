@@ -6,11 +6,17 @@
 /*   By: aahrach <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 11:46:46 by aahrach           #+#    #+#             */
-/*   Updated: 2022/10/24 11:06:02 by aahrach          ###   ########.fr       */
+/*   Updated: 2022/11/04 18:50:55 by aahrach          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static void	ft_zero(int *k, int *c)
+{
+	*k = 0;
+	*c = 0;
+}
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
@@ -20,8 +26,9 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		j;
 	int		c;
 
-	k = 0;
-	c = 0;
+	ft_zero(&k, &c);
+	if (!s1 || !s2)
+		return (NULL);
 	i = ft_strlen(s1);
 	j = ft_strlen(s2);
 	p = malloc((i + j + 1) * sizeof(char));

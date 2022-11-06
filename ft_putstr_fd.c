@@ -6,7 +6,7 @@
 /*   By: aahrach <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 20:12:17 by aahrach           #+#    #+#             */
-/*   Updated: 2022/10/24 10:57:44 by aahrach          ###   ########.fr       */
+/*   Updated: 2022/11/04 20:53:20 by aahrach          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -15,7 +15,11 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	int	i;
 
+	if (!s)
+		return ;
 	i = 0;
+	if (!s)
+		return ;
 	while (s[i])
 	{
 		write (fd, &s[i++], 1);
